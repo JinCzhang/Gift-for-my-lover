@@ -3,7 +3,7 @@
 
 ## 演示
 
-参见[演示页面](http://haixing-hu.github.io/gift-to-lover/repo/src/index.html)
+参见[演示页面](https://jinczhang.github.io/Gift-for-my-lover/src/index/html)
 
 ## 使用方法
 
@@ -25,43 +25,10 @@
 
 强烈建议使用最新版的Chrome以获得最佳的浏览效果。
 
-## 已知问题
-
-- ~~预载入速度太慢且无进度条指示载入百分比~~；已增加预载入图片和音乐的功能和进度指示；
-- ~~在网络较慢的环境下，效果比较卡~~；设置预载入图片和音乐即可；
-
-## 计划
-
-- [x] 加入背景音乐播放功能；
-- [x] 加入全屏显示功能（是指将整个浏览器页面全屏，隐藏浏览器窗口）；
-- [x] 增加图片计数器；
-- [x] 连续播放多首背景音乐；
-- [ ] 随机乱序播放背景音乐；
-- [x] 增加预载入进度条指示载入百分比；
-- [ ] 电影截图不够清晰，需要重新选择高清的、无水印的电影截图；
-- [ ] 需要调整电影截图的顺序播放顺序；
-- [ ] 开头增加一些字幕，描述一下礼物献给的对象以及其他一些要对她/他说的话；
-- [ ] 定制第一张幻灯片和最后一张幻灯片中的字幕，打算最后一张显示大话西游的那段经典台词，并且播放那首《一生所爱》；
-- [ ] 最后增加一个可选的致谢字幕，向项目的资源提供者表示感谢；
-- [ ] 制作脚本一键发布项目到某些常见的个人网站（比如发布到自己的github page上）；
-- [ ] 制作脚本将项目打包为成苹果、安卓的手机应用；
-
 ## 致谢
 
 此项目，使用了下述资源、代码和工具，在此一并表示感谢！
 
-- 项目的灵感以及最初的电影截图来自于 @陈弈飘 同学在知乎上的下面这个答案：
-  http://www.zhihu.com/question/21682442/answer/36924153?group_id=636890926812016640
-- 还有个网上流传的所谓“520张我爱你电影截图.rar”，原始出处已经找不到了，网盘下载链接在此：
-  http://pan.baidu.com/share/link?uk=2033284939&shareid=1230432853
-- 部分图片还来源于下面的贴吧帖子：
-  http://tieba.baidu.com/p/1808798036
-- 以及下面的贴吧帖子：
-  http://tieba.baidu.com/p/2379987803
-- 部分图片还来源于下面的相册：
-  http://www.topit.me/album/1114176
-- 还有 @狼魄乾坤 同学的这个豆瓣相册：
-  http://www.douban.com/photos/album/157693223/
 - 幻灯片播放代码来自于 Jay Salvat 的 vegas 项目：
   https://github.com/jaysalvat/vegas
 - 音乐播放代码来自于 Jay Salvat 的 buzz 项目：
@@ -74,11 +41,6 @@
   http://www.inwebson.com/jquery/jpreloader-a-preloading-screen-to-preload-images/
 - 预载入背景音乐的代码思路来自下面的答案：
   http://stackoverflow.com/questions/5313646/how-to-preload-a-sound-in-javascript
-- Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了，连官网都找不到产品页面了。目前该软件在 App Store 上免费提供：
-  https://itunes.apple.com/us/app/snapselect-amazing-photo-duplicates/id935700987
-- Mac上用于查找相似图片的商业软件 PhotoSweeper：
-  https://itunes.apple.com/us/app/photosweeper/id463362050
-
 
 ## 协议
 
