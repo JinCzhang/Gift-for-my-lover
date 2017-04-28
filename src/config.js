@@ -16,12 +16,12 @@ var LOADING_IMAGES = "正在载入图片，请稍后……";
 /**
  * 预载入音乐的提示信息。
  */
-var LOADING_MUSICS = "正在载入音乐，请稍后……";
+var LOADING_MUSICS = "等一等，爱在一点一点累加！";
 
 /**
  * 是否预加载所有的图片。
  */
-var PRELOAD_IMAGES = true;
+var PRELOAD_IMAGES = false;
 
 /**
  * 是否预加载所有的音乐。
