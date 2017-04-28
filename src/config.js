@@ -6,7 +6,7 @@
 /**
  * 网页的标题。
  */
-var TITLE = "A Gift To My Lover";
+var TITLE = "献给我最爱的人";
 
 /**
  * 预载入图片的提示信息。
@@ -125,16 +125,38 @@ var IMAGE_DIR = "./images";
 /**
  * 幻灯片图片的URL列表。注意如果SHUFFLE选项为false，则会按照数组的顺序播放幻灯片。
  */
+var IMAGE_COUNT = 518;
+
+/**
+ * 幻灯片播放的图片所在的目录，默认为 "./images"。
+ *
+ * 该目录中的图片必须为JPEG格式并以".jpg"为文件名后缀，图片总数目必须为 IMAGE_COUNT 。
+ * 图片的文件名必须从1开始编号，到 IMAGE_COUNT 为止，即"1.jpg", "2.jpg", ..., "520.jpg".
+ *
+ * 注意第一张图片"start.jpg"和最后一张图片"end.jpg"可以设置为特殊的图片，并增加相应的字幕。
+ */
+var IMAGE_DIR = "./images";
+
+/**
+ * 幻灯片图片的URL列表。注意如果SHUFFLE选项为false，则会按照数组的顺序播放幻灯片。
+ */
 var IMAGES = [];
 
 // 默认将使用 IMAGE_DIR 目录下的所有电影截图，按照其文件名顺序播放，图片格式都必须为jpg。
 // 如果要增加或减少图片的数目，请修改 IMAGE_COUNT 的值。
 // 当然，也可以直接定义 IMAGES 数组的值，不过那样图片多了会比较麻烦。
+(function() {
+  IMAGES.push(IMAGE_DIR + "/start.jpg");
+  for (var i = 1; i <= IMAGE_COUNT; ++i) {
+    IMAGES.push(IMAGE_DIR + "/" + i + ".jpg");
+  }
+  IMAGES.push(IMAGE_DIR + "/end.jpg");
+})();
 
 /**
  * 所有背景音乐的总数目。如果要添加删除音乐，请修改此数目。
  */
-var MUSIC_COUNT =3;
+var MUSIC_COUNT = 3;
 
 /**
  * 播放的背景音乐所在的目录，默认为 "./musics"。
@@ -153,69 +175,8 @@ var MUSICS = [];
 // 默认将使用 MUSIC_DIR 目录下的所有音乐，按照其文件名顺序播放，音乐格式都必须为mp3。
 // 如果要增加或减少音乐的数目，请修改 MUSIC_COUNT 的值。
 // 当然，也可以直接定义 MUSICS 数组的值，不过那样音乐多了会比较麻烦。
-
-
-/*
-function sleep(numberMillis) { 
-var now = new Date(); 
-var exitTime = now.getTime() + numberMillis; 
-while (true) { 
-now = new Date(); 
-if (now.getTime() > exitTime) 
-return; 
-} 
-}
-*/
-
-
-
-/*
-function sleep(obj,iMinSecond){
-　　 if (window.eventList==null) window.eventList=new Array();
-　　 var ind=-1;
-　　 for (var i=0;i<window.eventList.length;i++){
-　　   if (window.eventList[i]==null) {
-　　    window.eventList[i]=obj;
-　　    ind=i;
-　　    break;
-　　   }
-　　 }
-　　 
-　　 if (ind==-1){
-　　   ind=window.eventList.length;
-　　   window.eventList[ind]=obj;
-　　 }
-　　 setTimeout("GoOn(" + ind + ")",1000);
-　　}
-
-function GoOn(ind){
-　　 var obj=window.eventList[ind];
-　　 window.eventList[ind]=null;
-　　 if (obj.NextStep) obj.NextStep();
-　　 else obj();
-　　}
-*/
-
-/*
-function sleep(d){
-  for(var t = Date.now();Date.now() - t <= d;);
-}
-*/
-
 (function() {
   for (var i = 1; i <= MUSIC_COUNT; ++i) {
-  MUSICS.push(MUSIC_DIR + "/" + i + ".mp3");
+    MUSICS.push(MUSIC_DIR + "/" + i + ".mp3");
   }
 })();
-
-(function() {
-  IMAGES.push(IMAGE_DIR + "/start.jpg");
-  for (var i = 1; i <= IMAGE_COUNT; ++i) {
-    IMAGES.push(IMAGE_DIR + "/" + i + ".jpg");
-  }
-  IMAGES.push(IMAGE_DIR + "/end.jpg");
-})();
-
-
-
-
