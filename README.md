@@ -3,7 +3,7 @@
 
 ## 演示
 
-参见[演示页面](https://jinczhang.github.io/Gift-for-my-lover/src/index/html)
+参见[演示页面](https://jinczhang.github.io/Gift-for-my-lover/src/index.html)
 
 ## 使用方法
 
