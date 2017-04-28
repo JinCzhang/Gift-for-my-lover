@@ -21,7 +21,7 @@ var LOADING_MUSICS = "正在载入音乐，请稍后……";
 /**
  * 是否预加载所有的图片。
  */
-var PRELOAD_IMAGES = false;
+var PRELOAD_IMAGES = true;
 
 /**
  * 是否预加载所有的音乐。
