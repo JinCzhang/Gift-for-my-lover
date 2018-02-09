@@ -3,17 +3,6 @@
  *
  */
 
-// run on page load
-var button = document.getElementById('button');
-var audio = document.getElementById('audio');
- 
-var onClick = function() {
-    audio.play(); // audio will load and then play
-};
- 
-button.addEventListener('click', onClick, false);
-
-
 /**
  * 网页的标题。
  */
@@ -27,7 +16,7 @@ var LOADING_IMAGES = "正在载入图片，请稍后……";
 /**
  * 预载入音乐的提示信息。
  */
-/*var LOADING_MUSICS = "等一等，爱在一点一点累加！";
+*var LOADING_MUSICS = "等一等，爱在一点一点累加！";
 
 /**
  * 是否预加载所有的图片。
@@ -37,7 +26,7 @@ var PRELOAD_IMAGES = false;
 /**
  * 是否预加载所有的音乐。
  */
-/*var PRELOAD_MUSICS = true;
+*var PRELOAD_MUSICS = true;
 
 /**
  * 是否自动播放图片和音乐。
